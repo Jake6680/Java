@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="css/start.css" href="stylesheet">
+    <link href="css/start.css" rel="stylesheet">
     <title>First</title>
 </head>
 <body>
-    <!-- 
+    <!-- 1강!
         <h1 id="hellow">안녕하세요!</h1>    
 
     <script>
@@ -17,7 +17,57 @@
     -->
     
 
+    <!--  함수 기초 
+         <div class="arert-box" id="arert-box_id">
+        <p>알림창임</p>
+        <button onclick="arertclose()">닫기</button>
+    </div>
+    <button onclick="arertOpen()">버튼</button>
+    <script>
+        function arertOpen(){
+            document.getElementById('arert-box_id').style.display = 'block';
+        }
+        function arertclose(){
+            document.getElementById('arert-box_id').style.display = 'none';
+        }
+    </script> 
+    -->
 
-    <div class="arert-box">알림창임</div>
+    <!-- 함수 파라미터 사용방법 
+        <div class="arert-box" id="arert-box_id">
+        <p id="arert-text">알림창임</p>
+        <button onclick="arertEditer('none');">닫기</button>
+    </div>
+
+    <button onclick="arertEditer('block', '아이디를 입력하세요');">아이디</button>
+    <button onclick="arertEditer('block', '비밀번호를 입력하세요');">비밀번호</button>
+
+
+    <script>
+        function arertEditer(Editing, Text){
+            document.getElementById('arert-text').innerText = Text;
+            document.getElementById('arert-box_id').style.display = Editing;
+        }
+    </script>  -->
+
+
+    
+    <div class="arert-box" id="arert-box_id">
+        <p id="arert-text">알림창임</p>
+        <button onclick="arertEditer('none');">닫기</button>
+    </div>
+    <button id="disclose">알림창</button>
+
+    <script>
+        
+        document.getElementById('disclose').addEventListener('click', function(){
+            document.getElementById('arert-box_id').style.display = 'block';
+        });
+
+        function arertEditer(Editing){
+            document.getElementById('arert-box_id').style.display = Editing;
+        }
+    </script> 
+
 </body>
 </html>

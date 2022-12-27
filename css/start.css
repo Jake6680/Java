@@ -1,0 +1,8 @@
+.arert-box{
+    background-color: skyblue;
+    padding: 20px ;
+    color: white;
+    border-radius: 5px;
+    display: none;
+    /* none은 안보임    block은 보임 */
+}
