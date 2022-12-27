@@ -6,3 +6,9 @@
     display: none;
     /* none은 안보임    block은 보임 */
 }
+.list-group{
+    display: none;
+}
+.show{
+    display: block;
+}
