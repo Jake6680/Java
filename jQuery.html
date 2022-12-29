@@ -40,7 +40,7 @@
       </div>
     </nav> 
 
-    <div style="height: 60px"></div>
+    <div style="height: 73px"></div>
     <ul class="list-group">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
@@ -169,12 +169,17 @@
             imgCount += 1
           }
         });
+
+
+
+
+
         $(window).on('scroll', function(){
           var scrollQ = $(window).scrollTop();
           if (scrollQ < 100) {
-            $('.navbar-brand').css('font-size', '10px');
-          }else {
             $('.navbar-brand').css('font-size', '30px');
+          }else {
+            $('.navbar-brand').css('font-size', '10px');
           }
         });
 
